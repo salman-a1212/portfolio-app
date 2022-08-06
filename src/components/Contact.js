@@ -22,6 +22,9 @@ const Contact = () => {
     })
       .then(() => alert("Message sent!"))
       .catch((error) => alert(error));
+    setName("");
+    setEmail("");
+    setMessage("");
   }
 
   return (
@@ -74,8 +77,8 @@ const Contact = () => {
               Hire Me
             </h2>
             <p className='leading-relaxed mb-5'>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-              suscipit officia aspernatur veritatis. Asperiores, aliquid?
+              I am open to work on exiciting opportunities, Please feel free to
+              get in touch!
             </p>
             <div className='relative mb-4'>
               <label htmlFor='name' className='leading-7 text-sm text-gray-400'>
@@ -121,6 +124,7 @@ const Contact = () => {
             <button
               type='submit'
               className='text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg'
+              onClick={handleSubmit}
             >
               Submit
             </button>
