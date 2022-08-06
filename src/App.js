@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
